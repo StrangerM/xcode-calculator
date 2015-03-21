@@ -7,21 +7,70 @@
 //
 
 #import "ViewController.h"
+#import "Fraction.h"
 
 @interface ViewController ()
-
+@property (strong, nonatomic) Fraction *firstFraction;
+@property (strong, nonatomic) Fraction *secondFraction;
+@property (assign, nonatomic) BOOL operationFlag;
+@property (assign, nonatomic) NSInteger operation;
+@property (weak, nonatomic) IBOutlet UILabel *result;
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+- (IBAction)buttonTap:(id)sender
+{
+    UIButton *button = (UIButton *)sender;
+    switch (button.tag) {
+        case 1001: {
+            if (self.operationFlag) {
+                self.secondFraction;
+            } else {
+                self.firstFraction;
+            }
+            break;
+        }
+        case 1100: {
+            self.operationFlag = YES;
+            self.operation = button.tag;
+            break;
+        }
+        case 1500: {
+            self.operationFlag = NO;
+            [self calculateAndOutput];
+            break;
+        }
+        default:
+            break;
+    }
+}
+
+- (void)calculateAndOutput
+{
+    switch (self.operation) {
+        case 1100: {
+            
+            break;
+        }
+        default:
+            break;
+    }
+}
+
+- (Fraction *)addFirstFraction:(Fraction *)fractionA toSecondFraction:(Fraction *)fractionB
+{
+    Fraction *result;
+    result.denominator = fractionA.denominator * fractionB.denominator;
+    result.nominator = fractionA.nominator * fractionB.denominator + fractionB.nominator * fractionA.denominator;
+    [result optimizeFraction];
+    return result;
 }
 
 @end
