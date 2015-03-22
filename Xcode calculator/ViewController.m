@@ -137,7 +137,7 @@
 {
     switch (self.operation) {
         case 1100: {
-            [self addFirstFraction:<#(Fraction *)#> toSecondFraction:<#(Fraction *)#>];
+            [self addFirstFraction:self. firstFraction  toSecondFraction:self. secondFraction];
             
             break;
         }
