@@ -34,6 +34,87 @@
                 self.secondFraction;
             } else {
                 self.firstFraction;
+                
+            }
+            break;
+        }
+        case 1002: {
+            if (self.operationFlag) {
+                self.secondFraction;
+            } else {
+                self.firstFraction;
+                
+            }
+            break;
+        }
+        case 1003: {
+            if (self.operationFlag) {
+                self.secondFraction;
+            } else {
+                self.firstFraction;
+                
+            }
+            break;
+        }
+        case 1004: {
+            if (self.operationFlag) {
+                self.secondFraction;
+            } else {
+                self.firstFraction;
+                
+            }
+            break;
+        }
+        case 1005: {
+            if (self.operationFlag) {
+                self.secondFraction;
+            } else {
+                self.firstFraction;
+                
+            }
+            break;
+        } case 1006: {
+            if (self.operationFlag) {
+                self.secondFraction;
+            } else {
+                self.firstFraction;
+                
+            }
+            break;
+        }
+        case 1007: {
+            if (self.operationFlag) {
+                self.secondFraction;
+            } else {
+                self.firstFraction;
+                
+            }
+            break;
+        }
+        case 1008: {
+            if (self.operationFlag) {
+                self.secondFraction;
+            } else {
+                self.firstFraction;
+                
+            }
+            break;
+        }
+            
+        case 1009: {
+            if (self.operationFlag) {
+                self.secondFraction;
+            } else {
+                self.firstFraction;
+                
+            }
+            break;
+        } case 1000: {
+            if (self.operationFlag) {
+                self.secondFraction;
+            } else {
+                self.firstFraction;
+                
             }
             break;
         }
