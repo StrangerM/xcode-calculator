@@ -27,21 +27,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18k-4b-eey" userLabel="1">
-                                <rect key="frame" x="16" y="82" width="55" height="55"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="5Wd-Dg-gzG"/>
-                                    <constraint firstAttribute="width" constant="55" id="hoE-9H-7wu"/>
-                                </constraints>
-                                <state key="normal" title="1">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zm2-Dz-BVd"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" tag="1002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mps-3b-O1I">
                                 <rect key="frame" x="79" y="82" width="55" height="55"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -70,6 +55,21 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fM9-at-SJ5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2E-IT-9Xh">
+                                <rect key="frame" x="205" y="82" width="55" height="55"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="phb-ng-4Fo"/>
+                                    <constraint firstAttribute="width" constant="55" id="tvm-WQ-zBm"/>
+                                </constraints>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XFg-Mf-txw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nsf-t5-o9t">
@@ -233,19 +233,19 @@
                                     <action selector="buttonTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bYa-hW-Nu6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2E-IT-9Xh">
-                                <rect key="frame" x="205" y="82" width="55" height="55"/>
+                            <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18k-4b-eey" userLabel="1">
+                                <rect key="frame" x="16" y="82" width="55" height="55"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="phb-ng-4Fo"/>
-                                    <constraint firstAttribute="width" constant="55" id="tvm-WQ-zBm"/>
+                                    <constraint firstAttribute="height" constant="55" id="5Wd-Dg-gzG"/>
+                                    <constraint firstAttribute="width" constant="55" id="hoE-9H-7wu"/>
                                 </constraints>
-                                <state key="normal" title="+">
+                                <state key="normal" title="1">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XFg-Mf-txw"/>
+                                    <action selector="buttonTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zm2-Dz-BVd"/>
                                 </connections>
                             </button>
                         </subviews>
