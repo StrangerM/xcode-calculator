@@ -49,6 +49,7 @@
                 }
             break;
         }
+        }
         case 1003: {
             if (self.operationFlag) {
                 if(self.denominatorFlag) {
@@ -59,6 +60,8 @@
 
             break;
         }
+            
+        }
         case 1004: {
             if (self.operationFlag) {
                 if(self.denominatorFlag) {
@@ -67,6 +70,7 @@
                     self.secondFraction.nominator =  (self.secondFraction.denominator * 10) +4;
                 }
             break;
+        }
         }
         case 1005: {
             if (self.operationFlag) {
@@ -77,7 +81,9 @@
                 }
 
             break;
-        } case 1006: {
+            }
+        }
+        case 1006: {
             if (self.operationFlag) {
                 if(self.denominatorFlag) {
                     self.secondFraction.denominator =  (self.secondFraction.denominator * 10) + 6;
@@ -86,6 +92,7 @@
                 }
 
             break;
+            }
         }
         case 1007: {
             if (self.operationFlag) {
@@ -104,8 +111,9 @@
                 }else {
                     self.secondFraction.nominator =  (self.secondFraction.denominator * 10) +8;
                 }
-}
+
             break;
+            }
         }
             
         case 1009: {
@@ -117,6 +125,7 @@
                 }
 
             break;
+            }
         } case 1000: {
             if (self.operationFlag) {
                 if(self.denominatorFlag) {
@@ -126,6 +135,7 @@
                 }
 
             break;
+            }
         }
         case 1100: {
             self.operationFlag = YES;
@@ -140,9 +150,10 @@
         default:
             break;
     }
+    }
 }
 
-- (void)calculateAndOutput
+            - (void)calculateAndOutput
 {
     switch (self.operation) {
         case 1100: {
