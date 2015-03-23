@@ -11,6 +11,7 @@
 
 @interface ViewController ()
 @property (strong, nonatomic) Fraction *firstFraction;
+@property (assign, nonatomic) BOOL denominatorFlag;
 @property (strong, nonatomic) Fraction *secondFraction;
 @property (assign, nonatomic) BOOL operationFlag;
 @property (assign, nonatomic) NSInteger operation;
@@ -29,93 +30,101 @@
 {
     UIButton *button = (UIButton *)sender;
     switch (button.tag) {
+            
         case 1001: {
             if (self.operationFlag) {
-                self.secondFraction;
-            } else {
-                self.firstFraction;
-                
-            }
-            break;
+                if(self.denominatorFlag) {
+                    self.secondFraction.denominator =  (self.secondFraction.denominator * 10) +1;
+                }else {
+                    self.secondFraction.nominator =  (self.secondFraction.denominator * 10) +1;
+                }
+            }break;
         }
         case 1002: {
             if (self.operationFlag) {
-                self.secondFraction;
-            } else {
-                self.firstFraction;
-                
-            }
+                if(self.denominatorFlag) {
+                    self.secondFraction.denominator =  (self.secondFraction.denominator * 10) + 2;
+                }else {
+                    self.secondFraction.nominator =  (self.secondFraction.denominator * 10) +2;
+                }
             break;
         }
         case 1003: {
             if (self.operationFlag) {
-                self.secondFraction;
-            } else {
-                self.firstFraction;
-                
-            }
+                if(self.denominatorFlag) {
+                    self.secondFraction.denominator =  (self.secondFraction.denominator * 10) + 3;
+                }else {
+                    self.secondFraction.nominator =  (self.secondFraction.denominator * 10) +3;
+                }
+
             break;
         }
         case 1004: {
             if (self.operationFlag) {
-                self.secondFraction;
-            } else {
-                self.firstFraction;
-                
-            }
+                if(self.denominatorFlag) {
+                    self.secondFraction.denominator =  (self.secondFraction.denominator * 10) + 4;
+                }else {
+                    self.secondFraction.nominator =  (self.secondFraction.denominator * 10) +4;
+                }
             break;
         }
         case 1005: {
             if (self.operationFlag) {
-                self.secondFraction;
-            } else {
-                self.firstFraction;
-                
-            }
+                if(self.denominatorFlag) {
+                    self.secondFraction.denominator =  (self.secondFraction.denominator * 10) + 5;
+                }else {
+                    self.secondFraction.nominator =  (self.secondFraction.denominator * 10) +5;
+                }
+
             break;
         } case 1006: {
             if (self.operationFlag) {
-                self.secondFraction;
-            } else {
-                self.firstFraction;
-                
-            }
+                if(self.denominatorFlag) {
+                    self.secondFraction.denominator =  (self.secondFraction.denominator * 10) + 6;
+                }else {
+                    self.secondFraction.nominator =  (self.secondFraction.denominator * 10) +6;
+                }
+
             break;
         }
         case 1007: {
             if (self.operationFlag) {
-                self.secondFraction;
-            } else {
-                self.firstFraction;
-                
-            }
+                if(self.denominatorFlag) {
+                    self.secondFraction.denominator =  (self.secondFraction.denominator * 10) + 7;
+                }else {
+                    self.secondFraction.nominator =  (self.secondFraction.denominator * 10) +7;
+                }
+
             break;
         }
         case 1008: {
             if (self.operationFlag) {
-                self.secondFraction;
-            } else {
-                self.firstFraction;
-                
-            }
+                if(self.denominatorFlag) {
+                    self.secondFraction.denominator =  (self.secondFraction.denominator * 10) + 8;
+                }else {
+                    self.secondFraction.nominator =  (self.secondFraction.denominator * 10) +8;
+                }
+}
             break;
         }
             
         case 1009: {
             if (self.operationFlag) {
-                self.secondFraction;
-            } else {
-                self.firstFraction;
-                
-            }
+                if(self.denominatorFlag) {
+                    self.secondFraction.denominator =  (self.secondFraction.denominator * 10) + 9;
+                }else {
+                    self.secondFraction.nominator =  (self.secondFraction.denominator * 10) +9;
+                }
+
             break;
         } case 1000: {
             if (self.operationFlag) {
-                self.secondFraction;
-            } else {
-                self.firstFraction;
-                
-            }
+                if(self.denominatorFlag) {
+                    self.secondFraction.denominator =  (self.secondFraction.denominator * 10) + 0;
+                }else {
+                    self.secondFraction.nominator =  (self.secondFraction.denominator * 10) +0;
+                }
+
             break;
         }
         case 1100: {
