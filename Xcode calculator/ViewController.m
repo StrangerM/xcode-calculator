@@ -25,7 +25,7 @@
     [super viewDidLoad];
 }
 
-    
+
 - (IBAction)buttonTap:(id)sender
 {
     UIButton *button = (UIButton *)sender;
@@ -35,8 +35,11 @@
             if (self.operationFlag) {
                 if(self.denominatorFlag) {
                     self.secondFraction.denominator =  (self.secondFraction.denominator * 10) +1;
+                    _result.text = [NSString stringWithFormat:@"%i", _secondFraction.denominator];
+                    
                 }else {
-                    self.secondFraction.nominator =  (self.secondFraction.denominator * 10) +1;
+                    self.secondFraction.nominator =  (self.secondFraction.nominator * 10) +1;
+                  
                 }
             }break;
         }
@@ -45,7 +48,7 @@
                 if(self.denominatorFlag) {
                     self.secondFraction.denominator =  (self.secondFraction.denominator * 10) + 2;
                 }else {
-                    self.secondFraction.nominator =  (self.secondFraction.denominator * 10) +2;
+                    self.secondFraction.nominator =  (self.secondFraction.nominator * 10) +2;
                 }
             break;
         }
@@ -55,7 +58,7 @@
                 if(self.denominatorFlag) {
                     self.secondFraction.denominator =  (self.secondFraction.denominator * 10) + 3;
                 }else {
-                    self.secondFraction.nominator =  (self.secondFraction.denominator * 10) +3;
+                    self.secondFraction.nominator =  (self.secondFraction.nominator * 10) +3;
                 }
 
             break;
@@ -77,7 +80,7 @@
                 if(self.denominatorFlag) {
                     self.secondFraction.denominator =  (self.secondFraction.denominator * 10) + 5;
                 }else {
-                    self.secondFraction.nominator =  (self.secondFraction.denominator * 10) +5;
+                    self.secondFraction.nominator =  (self.secondFraction.nominator * 10) +5;
                 }
 
             break;
@@ -88,7 +91,7 @@
                 if(self.denominatorFlag) {
                     self.secondFraction.denominator =  (self.secondFraction.denominator * 10) + 6;
                 }else {
-                    self.secondFraction.nominator =  (self.secondFraction.denominator * 10) +6;
+                    self.secondFraction.nominator =  (self.secondFraction.nominator * 10) +6;
                 }
 
             break;
@@ -99,7 +102,7 @@
                 if(self.denominatorFlag) {
                     self.secondFraction.denominator =  (self.secondFraction.denominator * 10) + 7;
                 }else {
-                    self.secondFraction.nominator =  (self.secondFraction.denominator * 10) +7;
+                    self.secondFraction.nominator =  (self.secondFraction.nominator * 10) +7;
                 }
 
             break;
@@ -109,7 +112,7 @@
                 if(self.denominatorFlag) {
                     self.secondFraction.denominator =  (self.secondFraction.denominator * 10) + 8;
                 }else {
-                    self.secondFraction.nominator =  (self.secondFraction.denominator * 10) +8;
+                    self.secondFraction.nominator =  (self.secondFraction.nominator * 10) +8;
                 }
 
             break;
@@ -121,7 +124,7 @@
                 if(self.denominatorFlag) {
                     self.secondFraction.denominator =  (self.secondFraction.denominator * 10) + 9;
                 }else {
-                    self.secondFraction.nominator =  (self.secondFraction.denominator * 10) +9;
+                    self.secondFraction.nominator =  (self.secondFraction.nominator * 10) +9;
                 }
 
             break;
@@ -131,7 +134,7 @@
                 if(self.denominatorFlag) {
                     self.secondFraction.denominator =  (self.secondFraction.denominator * 10) + 0;
                 }else {
-                    self.secondFraction.nominator =  (self.secondFraction.denominator * 10) +0;
+                    self.secondFraction.nominator =  (self.secondFraction.nominator * 10) +0;
                 }
 
             break;
@@ -153,7 +156,7 @@
     }
 }
 
-            - (void)calculateAndOutput
+- (void)calculateAndOutput;
 {
     switch (self.operation) {
         case 1100: {
