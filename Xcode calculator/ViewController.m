@@ -58,7 +58,7 @@
             if (!self.operationFlag) {
                 [self setFraction:self.firstFraction withNumber:2];
             } else {
-                [self setFraction:self.firstFraction withNumber:2];
+                [self setFraction:self.secondFraction withNumber:2];
             }
             break;
         }
@@ -66,7 +66,7 @@
             if (!self.operationFlag) {
                 [self setFraction:self.firstFraction withNumber:3];
             }else {
-                [self setFraction:self.firstFraction withNumber:3];
+                [self setFraction:self.secondFraction withNumber:3];
             }
 
             break;
@@ -76,7 +76,7 @@
             if (!self.operationFlag) {
                 [self setFraction:self.firstFraction withNumber:4];
                 } else {
-                [self setFraction:self.firstFraction withNumber:4];
+                [self setFraction:self.secondFraction withNumber:4];
                 }
             break;
         }
@@ -84,7 +84,7 @@
             if (!self.operationFlag) {
                 [self setFraction:self.firstFraction withNumber:5];
             }else {
-                [self setFraction:self.firstFraction withNumber:5];
+                [self setFraction:self.secondFraction withNumber:5];
                 }
 
             break;
@@ -93,7 +93,7 @@
             if (!self.operationFlag) {
                 [self setFraction:self.firstFraction withNumber:6];
                 } else {
-                [self setFraction:self.firstFraction withNumber:6];
+                [self setFraction:self.secondFraction withNumber:6];
                 }
 
             break;
@@ -102,7 +102,7 @@
             if (!self.operationFlag) {
                 [self setFraction:self.firstFraction withNumber:7];
                 } else {
-                [self setFraction:self.firstFraction withNumber:7];
+                [self setFraction:self.secondFraction withNumber:7];
                 }
 
             break;
@@ -111,7 +111,7 @@
             if (!self.operationFlag) {
                 [self setFraction:self.firstFraction withNumber:8];
                 } else {
-                [self setFraction:self.firstFraction withNumber:8];
+                [self setFraction:self.secondFraction withNumber:8];
                 }
 
             break;
@@ -121,7 +121,7 @@
             if (!self.operationFlag) {
                 [self setFraction:self.firstFraction withNumber:9];
                 } else {
-                    [self setFraction:self.firstFraction withNumber:9];
+                    [self setFraction:self.secondFraction withNumber:9];
                 }
 
             break;
@@ -130,7 +130,7 @@
             if (!self.operationFlag) {
                [self setFraction:self.firstFraction withNumber:0];
                 } else {
-                    [self setFraction:self.firstFraction withNumber:0];
+                    [self setFraction:self.secondFraction withNumber:0];
                 }
 
             break;
@@ -142,37 +142,18 @@
             break;
         }
         case 1500: {
-            self.operationFlag = NO;
-            self.denominatorFlag = NO;
-            [self calculateAndOutput];
-            break;
             
-        }
-        case 1100: {
+            
+             [self calculateAndOutput];
+            break;
+        case 1100:{
+            
             self.operationFlag = YES;
             self.denominatorFlag = NO;
-            self.operation = button.tag;
-            break;
-        }case 1200: {
-            self.operationFlag = YES;
-            self.denominatorFlag = NO;
-            self.operation = button.tag;
-            break;
+           
         }
-        case 1300: {
-            self.operationFlag = YES;
-            self.denominatorFlag = NO;
-            self.operation = button.tag;
-            break;
         }
-         case 1400: {
-            self.operationFlag = YES;
-            self.denominatorFlag = NO;
-            self.operation = button.tag;
-            break;
-        }
-        
-            default:
+        default:
             break;
         }
     
